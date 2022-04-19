@@ -131,16 +131,22 @@ hr {
   justify-content: space-between;
   margin: 100px auto;
 }
+.top_clm p {
+ background-color: #8c8c8c;
+ text-align: center;
+ color: #f2f2f2;
+ padding: 20px 0;
+}
 .top_clms a {
   flex-basis: 29%;
 }
-#summer,
-#dessert {
+#about,
+#works {
   background: #f2f2f2;
 }
-#summer,
-#hot-plate,
-#dessert {
+#about,
+#skills,
+#works {
   padding: 80px 0;
 }
 .item-detail {
@@ -164,27 +170,27 @@ hr {
   margin: 80px auto 30px;
   text-align: center;
 }
-#summer .all-btn a {
+#about .all-btn a {
   background: #f0c84f;
   border: solid 1px #f0c84f;
 }
-#summer .all-btn a:hover {
+#about .all-btn a:hover {
   background: white;
   color: #f0c84f;
 }
-#hot-plate .all-btn a {
+#skills .all-btn a {
   background: #60c0b5;
   border: solid 1px #60c0b5;
 }
-#hot-plate .all-btn a:hover {
+#skills .all-btn a:hover {
   background: white;
   color: #60c0b5;
 }
-#dessert .all-btn a {
+#works .all-btn a {
   background: #f17e79;
   border: solid 1px #f17e79;
 }
-#dessert .all-btn a:hover {
+#works .all-btn a:hover {
   background: white;
   color: #f17e79;
 }
@@ -205,23 +211,23 @@ hr {
 
 
 
-.summer_clms {
+.about_clms {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
 }
-.summer_clm {
+.about_clm {
   flex-basis: 48%;
 }
-.summer_clm .video div video {
+.about_clm .video div video {
   max-width: 480px;
   width: 100%;
 }
-.summer_clm.hot-plate,
-.summer_clm.dessert {
+.about_clm.skills,
+.about_clm.works {
   flex-basis: 49.5%;
 }
-.summer_clm-in {
+.about_clm-in {
   display: flex;
   justify-content: space-between;
   max-width: 330px;
@@ -239,7 +245,7 @@ hr {
   display: block;
   text-align: center;
 }
-.summer_item {
+.about_item {
   flex-basis: 47%;
 }
 .item_box .item {
@@ -326,14 +332,14 @@ hr {
   .box_top-img {
     width: 80%;
   }
-  #summer, #hot-plate, #dessert {
+  #about, #skills, #works {
     padding: 50px 0;
   }
   .num img {
     width: 60%;
     margin: auto;
   }
-  .summer_clm-in {
+  .about_clm-in {
     max-width: 100%;
   }
   .item_box .item {
@@ -341,13 +347,13 @@ hr {
   }
 }
 @media(max-width: 650px) {
-  .summer_clms {
+  .about_clms {
     display: block;
   }
-  .summer_clms.video_01 {
+  .about_clms.video_01 {
     display: flex;
   }
-  #summer, #hot-plate, #dessert {
+  #about, #skills, #works {
     padding: 30px 0;
   }
   .top_txt p {
@@ -366,10 +372,10 @@ hr {
     .num {
       margin: 40px auto 10px;
     }
-    .summer_clm-in {
+    .about_clm-in {
       margin: 0;
     }
-    .summer_clm {
+    .about_clm {
       margin: 10px 0;
     }
     .item-detail {
@@ -673,12 +679,12 @@ slick
 }
 
 
-.summer .slick-prev:before,
-.summer .slick-next:before,
-.hot-plate .slick-prev:before,
-.hot-plate .slick-next:before,
-.dessert .slick-prev:before, 
-.dessert .slick-next:before {
+.about .slick-prev:before,
+.about .slick-next:before,
+.skills .slick-prev:before,
+.skills .slick-next:before,
+.works .slick-prev:before, 
+.works .slick-next:before {
   content: "";
   display: block;
   font-size: 30px;
@@ -689,16 +695,16 @@ slick
   line-height: 35px;
   background-size: contain !important;
 }
-.summer .slick-prev:before,
-.summer .slick-next:before {
+.about .slick-prev:before,
+.about .slick-next:before {
   background: url("../img/arrow1.png");
 }
-.hot-plate .slick-prev:before,
-.hot-plate .slick-next:before {
+.skills .slick-prev:before,
+.skills .slick-next:before {
   background: url("../img/arrow2.png");
 }
-.dessert .slick-prev:before, 
-.dessert .slick-next:before {
+.works .slick-prev:before, 
+.works .slick-next:before {
   background: url("../img/arrow2.png");
 }
 
