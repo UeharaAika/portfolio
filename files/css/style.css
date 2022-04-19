@@ -84,10 +84,6 @@ li {
   list-style: none;
   padding: 0;
 }
-address {
-  font-style: normal;
-  font-weight: normal;
-}
 hr {
   display: none;
 }
@@ -111,11 +107,7 @@ hr {
 
 
 
-
-
-
-.top_txt,
-.num_btm-txt {
+.top_txt {
   text-align: center;
 }
 .top_txt img {
@@ -149,6 +141,13 @@ hr {
 #works {
   padding: 80px 0;
 }
+
+h2 {
+  text-align: center;
+}
+
+
+
 .item-detail {
   background: black;
   border: solid 1px black;
@@ -200,15 +199,6 @@ hr {
   max-width: 580px;
   margin: auto;
 }
-.num {
-  max-width: 90px;
-  margin: 100px auto 10px;
-}
-.num_btm-txt p {
-  line-height: 32px;
-  font-size: 17px;
-}
-
 
 
 .about_clms {
@@ -319,9 +309,6 @@ hr {
   }
 }
 @media(max-width: 800px) {
-  .num_btm-txt p {
-    font-size: 14px;
-  }
   .top_txt p {
     font-size: 18px;
     line-height: 30px;
@@ -334,10 +321,6 @@ hr {
   }
   #about, #skills, #works {
     padding: 50px 0;
-  }
-  .num img {
-    width: 60%;
-    margin: auto;
   }
   .about_clm-in {
     max-width: 100%;
@@ -365,13 +348,7 @@ hr {
   }
 }
 @media(max-width: 600px) {
-  .num_btm-txt p {
-      font-size: 2.6vw;
-      line-height: 5.8vw;
-    }
-    .num {
-      margin: 40px auto 10px;
-    }
+
     .about_clm-in {
       margin: 0;
     }
