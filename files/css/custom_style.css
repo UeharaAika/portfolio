@@ -17,8 +17,6 @@ body {
     line-height: 1.5;
     letter-spacing: 1px;
     text-align: justify;
-    background: black;
-    color: white;
 }
 
 h1 {
@@ -85,6 +83,26 @@ p span {
    # カスタム指定
    # font-sizeは必ず絶対値(px)で指定してください
    # ================================================================= */
+
+
+.page_top_btn {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-weight: bold;
+  padding: 0.7em;
+  text-align: center;
+  background: rgba(101, 101, 101, 0.5);
+  color: #fff;
+  transition: 0.3s;
+  text-decoration: none !important;
+}
+
+/* マウスオーバー時 */
+.page_top_btn:hover {
+  background: rgba(50, 50, 50, 0.9);
+  color: #fff;
+}
 
 
 .display-none {
@@ -372,20 +390,16 @@ p span {
 .modal_text {
     position: relative;
     flex: 1;
-    padding-left: 50px;
 }
 .modal_text h2 {
     position: relative;
-    font-size: 30px;
+    font-size: 27px;
     line-height: 60px;
     font-weight: normal;
+    margin-top: 10px;
 }
 
 
-
-.modal_detail {
-    margin-top: 30px;
-}
 .modal_detail a {
     display: block;
     margin-bottom: 5px;
@@ -398,20 +412,19 @@ p span {
     width: 100%;
 }
 .modal_detail dt {
-    flex-basis: 20%;
+    flex-basis: 16%;
     margin-right: 5px;
 }
 .modal_detail dd {
-      flex-basis: 80%;  
+      flex-basis: 84%;  
 }
 .modal_detail dt,
 .modal_detail dd {
     font-size: 14px;
-    font-weight: bold;
     line-height: 20px;
     text-align: left;
     border-bottom: solid 1px transparent;
-    letter-spacing: 0;
+    letter-spacing: 1px;
 }
 .modal_detail a:hover dt,
 .modal_detail a:hover dd {
@@ -426,17 +439,18 @@ p span {
     display: inline-block !important;
     width: 100%;
     max-width: 160px;
-    background: black;
+    background: #1C658C;
+    border: solid 1px #1C658C;
     color: white !important;
     margin: 15px auto 0;
     padding: 8px 0;
     font-size: 14px;
-    font-weight: bold;
     text-align: center;
     transition: .3s !important;
 }
 .modal_btn:hover {
-    background: #555;
+    background: white;
+    color: #1C658C !important;
 }
 
 @media (max-width: 900px) {
