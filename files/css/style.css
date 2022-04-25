@@ -69,13 +69,20 @@ a img:hover {
 p span {
     display: inline-block;
 }
-h1,
-h1 img {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-    line-height: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
+
+.mv_box {
+  margin: 300px auto;
+  text-align: center;
+}
+.mv_box h1 {
+  font-weight: normal;
+  font-size: 160px;
+  letter-spacing: 12px;
+  line-height: 120px;
+}
+.mv_box p {
+  font-size: 50px;
+  color: #e3e3e3;
 }
 
 ol,
@@ -87,11 +94,6 @@ li {
 hr {
   display: none;
 }
-
-/* # =================================================================
-   # カスタム指定
-   # font-sizeは必ず絶対値(px)で指定してください
-   # ================================================================= */
 .inner {
     max-width: 1000px;
     margin: auto;
@@ -109,7 +111,7 @@ hr {
 .top_clms {
   display: flex;
   justify-content: space-between;
-  margin: 100px auto;
+  margin: 150px auto;
   transition: 0.3s;
 }
 .top_clm p {
@@ -134,20 +136,26 @@ hr {
 }
 #about,
 #works {
-  background: #f2f2f2;
+  background: #f8f8f8;
 }
 #about,
-#skills,
+#skills {
+  padding: 100px 0 160px;
+}
 #works {
-  padding: 50px 0 120px;
+  padding: 100px 0 60px; 
 }
 
 h2 {
   text-align: center;
-  margin: 50px auto;
+  margin: 80px auto;
+  font-size: 35px;
+}
+h3 {
+  font-weight: normal;
+  margin: 25px auto 20px;
   font-size: 30px;
 }
-
 
 
 
@@ -172,23 +180,6 @@ h2 {
 
 
 
-
-
-
-.item-detail {
-  background: black;
-  border: solid 1px black;
-  color: white !important;
-  text-align: center;
-  max-width: 200px;
-  padding: 5px 0;
-  font-size: 14px;
-  display: block;
-}
-.item-detail:hover {
-  background: white;
-  color: black !important;
-}
 .all-btn a {
   color: white;
   padding: 12px 0;
@@ -206,20 +197,41 @@ h2 {
 }
 
 
+.about_box {
+  text-align: center;
+  margin: auto;
+}
+.about_box p {
+  line-height: 30px;
+}
 
-.about_clms {
+.about-me_img {
+  max-width: 300px;
+  margin: auto;
+}
+
+
+
+.skills_clms {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
 }
-.top .about_clm {
+.top.skills_clms {
+  display: block;
+}
+.top .skills_clm {
+  margin: auto;
+  display: block;
+  max-width: 210px;
+}
+.mdl .skills_clm {
   flex-basis: 22%;
 }
-.btm .about_clm {
+.btm .skills_clm {
   flex-basis: 13%;
-  margin-top: 30px;
 }
-.about_clm p {
+.skills_clm p {
   display: block !important;
   text-align: center;
   background-color: black;
@@ -227,34 +239,20 @@ h2 {
   color: white;
   padding: 20px 0;
 }
-.about_clm.skills,
-.about_clm.works {
+.skills_clms.mdl,
+.skills_clms.btm {
+  margin-top: 60px;
+}
+
+.skills_clm.skills,
+.skills_clm.works {
   flex-basis: 49.5%;
 }
-.about_clm-in {
+.skills_clm-in {
   display: flex;
   justify-content: space-between;
   max-width: 330px;
 }
-.video {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-.video iframe {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  right: 0;
-  display: block;
-  text-align: center;
-}
-.movieWrapper video {
-   width: 100%;
-  height: 100%;
-}
-
 .about_item {
   flex-basis: 47%;
 }
@@ -277,60 +275,30 @@ h2 {
 .item_box:hover {
   opacity: 0.6;
 }
-.hot_top-clm-in {
-  height: 100%;
-}
-.hot_top-clms,
-.hot_clm-in {
-  display: flex;
-  justify-content: space-between;
-}
-.hot_top-clm {
-  display: flex;
-  justify-content: space-between;
-  height: 100%;
-  flex-basis: 49.5%;
-}
-.hot_item {
-  flex-basis: 32%;
-}
-.princess_btn {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 19px;
-  transition: .3s;
-  cursor: pointer;
-}
-.princess_btn:hover {
-  opacity: 0.7;
-}
-.princess_clm p {
-  color: white;
-  font-weight: 600;
-  text-align: center;
-}
-.princess_clm {
-  flex-basis: 50%;
-  display: block;
-  background: #60c0b5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.princess_clm img:hover {
-  transform: scale(1);
-}
-
 
 
 @media(max-width: 800px) {
+  .mv_box {
+    margin: 300px auto;
+    text-align: center;
+  }
+  .mv_box h1 {
+    font-weight: normal;
+    font-size: 90px;
+    letter-spacing: 8px;
+    line-height: 90px;
+  }
+  .mv_box p {
+    font-size: 30px;
+    color: #e3e3e3;
+  }
   .top_clms a {
     flex-basis: 32%;
   }
   #about, #skills, #works {
     padding: 50px 0;
   }
-  .about_clm-in {
+  .skills_clm-in {
     max-width: 100%;
   }
   .item_box .item {
@@ -338,8 +306,19 @@ h2 {
   }
 }
 @media(max-width: 650px) {
-  .about_clms {
-    display: block;
+  .skills_clms {
+    flex-wrap: wrap;
+  }
+  .mdl .skills_clm,
+  .btm .skills_clm {
+    flex-basis: auto;
+  }
+  .skills_clm {
+    margin: 10px 0;
+  }
+  .skills_clm p {
+    width: 100px;
+    margin: 0 !important;
   }
   #about, #skills, #works {
     padding: 30px 0;
@@ -350,12 +329,10 @@ h2 {
 }
 @media(max-width: 600px) {
 
-    .about_clm-in {
+    .skills_clm-in {
       margin: 0;
     }
-    .about_clm {
-      margin: 10px 0;
-    }
+
     .item-detail {
       margin: 10px 0;
     }
@@ -369,13 +346,6 @@ h2 {
     .all-btn a {
       padding: 10px 0;
     }
-    .princess_clm p {
-    font-size: 14px;
-  }
-  .hot_top-clm-in img,
-  .hot_top-clm {
-    height: 218px !important;
-  }
 }
 
 
